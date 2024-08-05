@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the Spring Boot application WAR file into the container
-COPY target/myapp.war /app/
+COPY ./target/myapp.war /app/
 
 # Expose the port that the application will use
 EXPOSE 8080
